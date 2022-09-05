@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+:root {
+	--primary: #1e90ff;
+	--light: #ffffff;
+	--success:  #21dd5a;
+	--danger:  #f80000;
+	--stress: #f02f2f;
+	--grey: #eeeeee;
+	--dark:  #405d6d;
+	--accent:  #f2f9ff;
+  }
+  
+body{
+	background: #eef2f7d8;
+}
+
+/* .app-logo{
+	left: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	outline: none;
+	margin-top: 20px;
+} */
+
+.app-logo{
+	position: absolute;
+	top: 10%;
+	z-index: 5000;
+	width: 256px;
+	margin-bottom: 10px;
+}
+
+.menu{
+	text-align: center;
+	margin-top: 50px;
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+	font-family: 'Poppins';
+	font-size: 16px;
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  
+#content {
+	width: 512px;
+	padding: 10px;
+	background-color: #fff;	
+	box-shadow:
+		0 2.8px 2.2px rgba(163, 48, 48, 0.034),
+		0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+		0 12.5px 10px rgba(0, 0, 0, 0.06),
+		0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+		0 100px 80px rgba(0, 0, 0, 0.12);
+	border-radius: 5px;
+	margin-top: 96px;
+}
+
+#close-btn{
+	display: block;
+	width: 64px !important;
+	font-size: 80%;
+	font-weight: bolder;
+	color: var(--stress);
+	text-align: center;
+	text-decoration: none;
+	margin: 4px;
+	padding: 4px;
+	border: 1px solid var(--stress);
+	border-radius: 10px;
+}
+#close-btn:hover,#close-btn:active,#close-btn:focus{
+	color: var(--light);
+	background: var(--stress);
+}
+
+.brand{
+	text-align: center;
+	margin: 20px;
+}
+
+.brand-img{
+	width: 80px;
+	height: 80px;
+	animation: pop-swirl 1s ease forwards;
+}
+.brand-text{
+	font-size: 80%;
+	font-weight: bold;
+	color: var(--dark);
+	overflow: hidden;
+	border-right: .15em solid var(--primary);
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: 
+	  typing 3.5s steps(40, end),
+	  blink-caret .75s step-end infinite;
+}
+
+.thanks-text{
+	font-size: 28px;
+	font-weight: bold;
+	color: var(--success);
+	overflow: hidden;
+	border-right: .15em solid var(--primary);
+	white-space: nowrap;
+	text-align: center;
+	margin: 32px 0;
+	padding: 4px;
+	letter-spacing: .15em;
+	animation: 
+	  typing 3.5s steps(40, end),
+	  blink-caret .75s step-end infinite;
+}
+    
+  .survey-question{
+	text-align: center;
+	min-height: 228px;
+	color: var(--dark);
+	padding-bottom: 0px;
+  }
+
+  .survey-instruction{
+	color: var(--stress);
+}
+
+.option-wrapper{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);	  
+}
+
+.option-wrapper-polar{
+	width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.option-wrapper-polar div{
+	flex: 1 1 150px;
+}
+
+.option-wrapper, .option-wrapper-polar{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.survey-option img{
+	width: 36px;
+} 
+.survey-option-x2 img{
+	width: 32px;
+} 
+.survey-option-polar img{
+	width: 80px;
+} 
+.survey-option img,.survey-optionx2 img, .survey-option-polar img{
+	margin: 10px;
+	animation: pop-swirl 1s ease forwards;
+}
+
+.option-wrapper .survey-option img:hover,
+.option-wrapper .survey-option img:focus,
+.option-wrapper .survey-option img:active,
+.option-wrapper .survey-option-x2 img:hover,
+.option-wrapper .survey-option-x2 img:focus,
+.option-wrapper .survey-option-x2 img:active{
+	display: block;
+	margin-left: 30px !important;
+	margin-top: -10px !important;
+	width: 48px;
+	cursor:grab;
+}
+.option-wrapper .survey-option-polar img:hover,
+.option-wrapper .survey-option-polar img:focus,
+.option-wrapper .survey-option-polar img:active{
+	width: 96px;
+	cursor:grab;
+}
+
+.grayscaled{
+	filter: grayscale(100%);
+}
+.grayscaled:hover,.grayscaled:focus,.grayscaled:active{
+	filter: grayscale(0%);
+}
+
+.survey-option p, .survey-option-x2 p{
+	font-size: 12px;
+	font-weight: 100;
+	text-shadow: 3px 2px var(--grey);
+	animation: pop-swirl 1s ease forwards;
+	margin-top: 0;
+}
+	  
+.text-input{
+	width: 80%;
+	height: 128px;
+	border: 1px dotted #000000;
+}
+
+.navigate{
+	text-align: right;
+	margin-top: 0px;
+}
+
+.next-btn{
+	font-size: 80%;
+	padding: 5px;
+	border: 2px solid --dark;
+}
+
+.submit-btn{
+	font-size: 80%;
+}
+
+
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+  
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: var(--primary); }
+}
+
+@keyframes pop-swirl {
+	0% {
+		transform: scale(0) rotate(360deg);
+	}
+	60% {
+		transform: scale(0.8) rotate(-10deg);
+	}
+	100% {
+		transform: scale(1) rotate(0deg);
+	}
+}
